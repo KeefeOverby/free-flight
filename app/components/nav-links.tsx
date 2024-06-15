@@ -1,6 +1,6 @@
 'use client';
 
-import { Square3Stack3DIcon, SunIcon } from '@heroicons/react/24/outline';
+import { RocketLaunchIcon, Square3Stack3DIcon, SunIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
@@ -8,6 +8,7 @@ import clsx from 'clsx';
 const links = [
     { name: 'Dashboard', href: '/ui/dashboard', icon: Square3Stack3DIcon },
     { name: 'Weather', href: '/ui/dashboard/weather', icon: SunIcon },
+    { name: 'Pre-Flight', href: '/ui/dashboard/pre-flight', icon: RocketLaunchIcon },
 ];
 
 export default function NavLinks() {
