@@ -8,15 +8,15 @@ export default function Nav() {
             <section className="flex flex-col md:flex-row max-h-max w-full items-center justify-between">
                 <div className="grid-cols-2 h-full w-full md:w-1/2 items-left justify-between">
                     <Link
-                        className="flex flex-col h-full w-full rounded-md bg-sky-900"
+                        className="flex flex-col h-full w-full rounded-md bg-gray-900"
                         href="/"
                     >
                         <h1
-                            className={`${roboto.className} h-1/2 font-bold text-3xl antialiased text-center text-white`}
+                            className={`${roboto.className} h-1/2 font-bold text-3xl antialiased text-center text-red-400`}
                         >
                             FreeFlight
                         </h1>
-                        <h2 className="h-1/2 text-center text-lg text-white">
+                        <h2 className="h-1/2 text-center text-lg text-red-400">
                             Pilot pre-flight EFB
                         </h2>
                     </Link>

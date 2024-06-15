@@ -8,23 +8,24 @@ async function GetMetar() {
     console.log(objMetar);
     return (
         <div className="flex flex-col h-fit w-full">
-                        <label className="flex flex-row h-fit w-full items-center justify-between py-4">
-                            METAR:
-                            <button
-                                className="text-white items-center h-fit w-1/4 bg-sky-900 rounded-md p-2"
-                                onClick={GetMetar}
-                            >
-                                Get METAR
-                            </button>
-                        </label>
-                        <textarea
-                            className="w-full bg-gray-200"
-                            name="metarData"
-                            rows={4}
-                            cols={40}
-                        />
-                    </div>
+            <label className="flex flex-row h-fit w-full items-center justify-between py-4">
+                METAR:
+                <button
+                    className="text-red-400 items-center h-fit w-1/4 bg-gray-900 rounded-md p-2"
+                    onClick={GetMetar}
+                >
+                    Get METAR
+                </button>
+            </label>
+            <div className="flex h-fit w-full bg-gray-900 text-green-300 rounded-md p-2">
+                {objMetar.map((item: any) => (
+                    <span key={item.metar_id}>
+                        {item.name} - {item.rawOb}
+                    </span>
+                ))}
+            </div>
+        </div>
     );
 }
 
-export default GetMetar
+export default GetMetar;

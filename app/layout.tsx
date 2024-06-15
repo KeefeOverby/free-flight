@@ -52,7 +52,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${montserrat.className} antialiased `} dir="ltr">
+    <html lang="en" className={`${montserrat.className} antialiased bg-gray-800 text-red-400`} dir="ltr">
       <body>{children}</body>
     </html>
   );
