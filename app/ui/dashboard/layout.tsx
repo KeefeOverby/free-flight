@@ -1,10 +1,10 @@
 import Nav from '@/app/components/nav';
 
-export default function DashboardLayout({
+const DashboardLayout = ({
     children,
 }: {
     children: React.ReactNode;
-}) {
+}) => {
     return (
         <>
             <div className="grid grid-col-1 h-screen w-full p-4">
@@ -14,3 +14,5 @@ export default function DashboardLayout({
         </>
     );
 }
+
+export default DashboardLayout;

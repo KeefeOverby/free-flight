@@ -46,14 +46,16 @@ export const viewport: Viewport = {
   themeColor: "#FFFFFF",
 };
 
-export default function RootLayout({
+const RootLayout = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>) => {
   return (
     <html lang="en" className={`${montserrat.className} antialiased bg-gray-800 text-red-400`} dir="ltr">
       <body>{children}</body>
     </html>
   );
 }
+
+export default RootLayout;

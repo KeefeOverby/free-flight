@@ -11,7 +11,7 @@ const links = [
     { name: 'Pre-Flight', href: '/ui/dashboard/pre-flight', icon: RocketLaunchIcon },
 ];
 
-export default function NavLinks() {
+const NavLinks = () => {
     const pathname = usePathname();
 
     return (
@@ -38,3 +38,5 @@ export default function NavLinks() {
         </>
     );
 }
+
+export default NavLinks;

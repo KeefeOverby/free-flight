@@ -1,6 +1,6 @@
 'use server';
 
-async function GetMetar() {
+const GetMetar = async () => {
     const response = await fetch(
         'https://aviationweather.gov/api/data/metar?ids=KJLN&format=json&taf=true&hours=1'
     );

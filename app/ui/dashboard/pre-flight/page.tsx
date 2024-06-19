@@ -1,4 +1,4 @@
-export default function PreFlight() {
+const PreFlight = () => {
     return (
         <>
             <section className="flex flex-col h-screen w-full items-center justify-between">
@@ -7,3 +7,5 @@ export default function PreFlight() {
         </>
     );
 }
+
+export default PreFlight;

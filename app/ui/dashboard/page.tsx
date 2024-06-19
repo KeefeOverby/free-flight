@@ -1,4 +1,4 @@
-export default function Dashboard() {
+const Dashboard = () => {
     return (
         <>
             <section className="flex h-screen w-full items-start justify-start">
@@ -9,3 +9,5 @@ export default function Dashboard() {
         </>
     );
 }
+
+export default Dashboard;

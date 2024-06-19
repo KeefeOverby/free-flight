@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { roboto } from '@/app/ui/fonts';
 import NavLinks from './nav-links';
 
-export default function Nav() {
+const Nav = () => {
     return (
         <>
             <section className="flex flex-col md:flex-row max-h-max w-full items-center justify-between">
@@ -28,3 +28,5 @@ export default function Nav() {
         </>
     );
 }
+
+export default Nav;
