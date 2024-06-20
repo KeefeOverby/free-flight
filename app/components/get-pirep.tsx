@@ -1,5 +1,7 @@
 'use server';
 
+import React from 'react';
+
 const GetPirep = async () => {
     const response = await fetch(
         'https://aviationweather.gov/api/data/pirep?id=KJLN&format=raw&age=1&distance=500&level=3000&inten=lgt'

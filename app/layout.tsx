@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { montserrat } from '@/app/ui/fonts';
+import React from 'react';
 import "@/app/ui/globals.css";
 
 const APP_NAME = "FreeFlight PWA App";

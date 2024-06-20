@@ -1,4 +1,5 @@
 import Nav from '@/app/components/nav';
+import React from 'react';
 
 const DashboardLayout = ({
     children,

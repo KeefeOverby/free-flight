@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { roboto } from '@/app/ui/fonts';
 import NavLinks from './nav-links';
+import React from 'react';
 
 const Nav = () => {
     return (

@@ -1,9 +1,10 @@
 'use server';
 
+import React from 'react';
 import GetMetar from '@/app/components/get-metar';
 import GetPirep from '@/app/components/get-pirep';
 
-const Weather = async () => {
+const Weather = () => {
     return (
         <>
             <section className="flex flex-col h-screen w-full items-center justify-between">
